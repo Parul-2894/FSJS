@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Prac</title>
+    <style>
+        /* Universal Selector */
+        * {
+            background-color: #005625;
+            color: #fefefe;
+        }
+
+        /* Individual Selector / Type Selector */
+        p {
+            background-color: #ffffff;
+            color: #dd0000;
+        }
+
+        /* Class Selector  */
+        .listheading {
+            background-color: #dd0000;
+            color: #ffffff;
+        }
+
+        #flower_details {
+            background-color: #0000aa;
+            color: #fdfdfd;
+
+        }
+
+        /* div li {
+            background-color: purple;
+            color: white
+        } */
+
+
+        /* Chained Class Selectors */
+        .listheading.flowerheading {
+            background-color: pink;
+            color: #010101;
+        }
+
+        /* h1, div{
+            border:5px solid black;
+        } */
+
+        /* Child Selector */
+        div li{
+            background-color: purple;
+            color:#f0f0f0
+        }
+
+        /* Direct child Selector */
+        div>li{
+            background-color: red;
+            color:#f0f0f0
+
+        }
+
+        /*  */
+       
+
+        /* Adjacent Sibling Selector Combinator */
+        .lily + li{
+            background-color: #010101;
+       }
+
+       .rose ~ li{
+            background-color:#0000aa;
+       }
+    </style>
+</head>
+<body>
+    <h1>This is the main heading</h1>
+    <p class="listheading flowerheading">
+        Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Praesentium, itaque?
+    </p>
+    <p id="flower_details">
+        Lorem ipsum dolor sit amet
+        consectetur, adipisicing elit.
+        In nostrum quis praesentium, beatae sunt labore illo similique dolorum corrupti ea voluptatum aliquid expedita
+        impedit placeat laborum tempora, reiciendis, a voluptates.
+    </p>
+    <div>
+        <li>Rose</li>
+        <p>Flowers</p>
+        <ul>
+            <li class="lily">Lily</li>
+            <li class="rose">Rose</li>
+            <li>Jasmine</li>
+            <li>Daisy</li>
+        </ul>
+        <p>Fruits</p>
+        <ul>
+            <li>Mango</li>
+            <li>Avacado</li>
+            <li>kiwi</li>
+        </ul>
+    </div>
+    <p class="listheading">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. In nostrum quis praesentium, beatae sunt labore illo
+        similique dolorum corrupti ea voluptatum aliquid expedita impedit placeat laborum tempora, reiciendis, a
+        voluptates.
+    </p>
+</body>
+
+</html>

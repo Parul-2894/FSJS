@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        body{
+            background-color: #cccccc;
+        }
+        .btn{
+            background-color: #0000aa;
+            color:#fff;
+            border: 2px solid #fff ;
+            height:40px;
+            border-radius: 10px;
+        }
+
+        .btn:hover{
+            background-color: #fff;
+            color: #0000aa;
+            border: 2px solid #00a ;
+        }
+
+        a:link{
+            color:#0000aa;
+        }
+
+        a:visited{
+            color:#00aa00;
+        }
+
+        input:invalid{
+            border-color: red;
+        }
+
+       
+
+        input:focus{
+            border: 1px solid #0000aa;
+            outline: #0000aa;
+        }
+
+    </style>
+</head>
+
+<body>
+    <button class="btn">Click To submit</button>
+    <br>
+    <br>
+
+    <a href="https://www.google.com">Google</a>
+    <br>
+    <br>
+
+    <input type="email" name="" id="" placeholder="email">
+</body>
+</html>
