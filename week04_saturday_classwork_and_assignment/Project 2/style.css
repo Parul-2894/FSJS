@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body{
+    max-width: 1440px;
+    background-color: #f0f4f5;
+    margin:auto;
+    overflow: hidden;
+}
+
+nav{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+ ul{
+    display: flex;
+    align-items: center;
+    
+} 
+
+nav>ul>li{
+    list-style: none;
+    margin-right: 50px;
+    font-weight: 600;
+
+} 
+nav>ul>li:first-child{
+    color: green;
+}
+
+/* Hero section */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:85vh;
+ 
+}
+
+main>section{
+    width:50%;
+}
+
+.leftsection{
+    margin-left: 5%;
+    position: relative;
+    
+}
+
+.topangle{
+    width:25px;
+
+}
+
+.leftsection>h1{
+    font-size: 50px;
+    width:450px;
+}
+
+.leftsection p{
+    color:#808080;
+    font-size: 18px;
+    margin: 20px 0px;
+    font-size: 14px;
+}
+
+.bottomangle{
+    width:25px;
+    position:absolute;
+    right:0px;
+}
+
+.stethescope{
+    z-index:-1;
+    position: absolute;
+    width:90%;
+    top:-60px;
+    right:-25px
+}
+
+.mouse{
+    position: absolute;
+    right:-40px;
+    bottom:-40px;
+    width:30px;
+
+}
+
+button{
+    padding: 15px 40px;
+    color:white;
+    background-color:green;
+    border:none;
+    border-radius: 40px;
+    font-size: 18px;
+
+
+}
+
+/* Right Side */
+/* .rightsection{
+    margin-right:5%;
+    background-color: blue !important;
+    position: relative;
+} */
+
+
+.greenbox, .yellowbox{
+    position:absolute;
+  
+
+}
+
+.greenbox{
+    width:38%;
+    right:15px;
+    bottom:45px;
+}
+
+.yellowbox{
+    width:36%;
+    right:0px;
+    bottom:50px;
+    
+}
+
+.doctor{
+    
+    position: absolute;
+    right:10px;
+    bottom:0px;
+    height:90%;
+}

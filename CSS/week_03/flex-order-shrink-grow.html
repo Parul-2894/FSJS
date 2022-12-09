@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order String Grow</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: flex-start;
+            background-color: #6AC47E;
+            padding:10px;
+        }
+        .container>div{
+            border:1px solid black;
+            margin-left:10px;
+            width:100px;
+            
+        }
+        #box3{
+            order:1;
+            
+        }
+
+        #box2{
+            flex-grow:2;
+            
+           
+        }
+        #box1{
+            flex-shrink: 2;
+            background-color: #46B2E0;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1">box 1 shrinks more than other boxes</div>
+        <div id="box2">box 2 grows more in comparison to other boxes</div>
+        <div id="box3">box 3 appears last</div>
+        <div id="box4">box 4</div>   
+    </div> 
+</body>
+</html>

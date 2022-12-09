@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    background-color:#f9f5ED ;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+nav{
+    padding:20px 10%;
+    height:15vh;
+}
+
+nav ul{
+    display:flex;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin-right:5%;
+}
+
+/* Css for hero section */
+main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    height:75vh;
+}
+
+.leftmain{
+    width:40%;
+}
+
+.leftmain>h1{
+    font-size: 50px;
+    line-height: 60px;
+
+}
+.leftmain>p{
+    margin: 5% 0;
+    font-size: 12px;
+    color:#152334;
+}
+
+.leftmain>button{
+    padding:15px 20px;
+    border:none;
+    background-color: #3b855b;
+    border-radius: 10px;
+    color:#f9f5ED;
+    font-weight: 500;
+}
+
+
+.rightmain{
+    width:60%;
+    height:100%;
+    padding-left:10%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+
+}
+
+.rightmain>div:nth-child(1)>img{
+    width: 150px;
+    object-fit: contain;
+
+}
+
+.rightmain>div:nth-child(1)>img:nth-child(2){
+    margin-left: 10px;
+
+    
+}
+
+.rightmain>div:nth-child(2)>img{
+    width: 315px;
+    object-fit: contain;
+    margin-top: 10px;
+}

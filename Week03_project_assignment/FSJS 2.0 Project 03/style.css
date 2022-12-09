@@ -1,0 +1,283 @@
+/* You can not modify anything from the HTML file */
+/* You can only modify the CSS file */
+
+
+body{
+    width:100%;
+    height:100%;
+    margin:auto;
+    font-family: 'Orbitron';
+    font-size:16px;
+    overflow-y: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    
+    width:100%;
+    max-height:100%;
+    padding:40px 80px;
+    box-sizing: border-box;
+}
+
+.container>section:nth-child(1){
+    height:60px;
+    
+    width:100%;
+    padding: none;
+}
+
+.navbar-container{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.navbar-container>div:nth-child(1)>img{
+    object-fit: contain;
+    width:100.75px;
+}
+
+.navbar-container>div:nth-child(2){
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  
+    padding: none;
+    margin: none;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.list>li{
+    margin-left: 50px;
+    font-weight: 500;
+}
+.list>li:nth-child(1){
+   margin-left: -40px;
+   font-weight: bold;
+
+}
+
+.list>li:nth-child(1):after{
+    content:" ";
+    width:35px;
+    margin-left:10px;
+    height:1px;
+    background-color: black;
+    display: block;
+    
+}
+
+.button-group{
+    width:200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-icon{
+    width:30px;
+    height:30px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-icon svg{
+    width:70%;
+}
+
+
+.nav-button{
+    padding: 8px 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: 'Orbitron';
+    margin-left: 10px;
+
+}
+
+.container>section:nth-child(2){
+   
+    position:relative;
+    top:40px;
+}
+
+.hero-container{
+    position: relative;
+}
+
+.globe{
+    position: absolute;
+    top: -15px;
+    right:45%;
+    z-index: 100;
+    
+}
+
+.globe>img{
+    height:50px;
+    width:50px;
+
+}
+
+.square{
+    position: relative;
+    top:220px; 
+    left:140px; 
+}
+.square>img{
+    height:250px;
+    width: 250px;}
+
+.globe~div>img{
+    
+    height:420px;
+    object-fit: contain;
+    z-index: 100;
+    top:-250px;
+    position: relative;
+
+}
+
+.star:nth-child(2){
+    position:absolute;
+    right:65px;
+    top:20px;
+    z-index: 300;
+    
+}
+
+
+
+.star:nth-child(2)>img{
+    width:45px;
+    object-fit: contain;
+}
+
+
+.star:nth-child(3){
+    position:absolute;
+    left:490px;
+    top:400px;
+    z-index: 400;
+      
+}
+
+.star:nth-child(3)>img{
+    
+    width:30px;
+    object-fit: contain;
+}
+
+
+.hero-container-right{
+    position: absolute;
+    top:0px;
+    right:0px;
+    width:65%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top:40px;
+    box-sizing: border-box;
+}
+
+.hero-container-right h1{
+    font-size: 45px;
+
+}
+
+.hero-description{
+    font-size: 13px;
+    width:80%;
+    text-align: center;
+    font-family: 'Poppins';
+    position: relative;
+    top:-10px;
+    padding: 0px;
+    margin-bottom: 0px;
+    color:#868686;
+}
+
+.hero-container-right>div:nth-child(3){
+    
+    margin-top:55px;
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container-right>div:nth-child(3)>button{
+    
+    background-color: white;
+    font-family: 'Orbitron' ;
+    border:2px solid black;
+    border-radius:5px;
+    font-style: bold;
+    font-size: 15px;
+}
+
+.button-email{
+    padding:3px 20px;
+}
+
+.button-join{
+    margin-left:15px;
+    color:white;
+    background-color: #0F1012 !important;
+    padding:3px;
+    font-size: 16px;
+}
+
+
+.hero-container-right>div:nth-child(4){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:55px;
+}
+
+.contact-heading{
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.icons{
+    
+    margin-top: -15px;
+
+}
+
+.icons>span>img{
+    width:25px;
+    height:25px;
+    object-fit: contain;
+}
+
+.icons>span:not(:nth-child(1)){
+    margin-left: 6px;
+}
+
+
+
+
