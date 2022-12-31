@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Checks</title>
+    <style>
+        .grids_container{
+            display:grid;
+            grid-template-columns: repeat(5 , 1fr);
+            grid-template-rows: 200px 200px;  
+            gap:20px;
+           
+        }
+        .grids_container>div{
+            background-color:rgba(0, 0, 255, 0.283);
+            border:3px solid black;
+            padding:10px;     
+        }
+        .firstclass{
+            grid-row: 1 / 3;
+            grid-column: 1 / 2;
+        }
+        .sixthbox{
+            background-color:rgba(19, 146, 201, 0.785) !important;
+            grid-column: 1 / 6;
+            grid-row: 2 / 3;
+            z-index:40;
+
+        }    
+    </style>
+</head>
+<body>
+    <div class="grids_container">
+        <div class="firstclass">Grid Item 1  </div>
+        <div>Grid Item 2</div>
+        <div>Grid Item 3</div>
+        <div>Grid Item 4</div>
+        <div>Grid Item 5</div>
+        <div class="sixthbox">Grid Item 6 positioned using grid lines overlapping the grid item 1</div>
+    
+    </div>    
+</body>
+</html>

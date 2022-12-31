@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        body{
+            width:100vw;
+            height:100vh;
+            margin:auto;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .screen_or_print{
+            padding: 50px;
+            width:80%;
+            height:80%;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        @media screen{
+            .screen_or_print:after{
+               content: "This is when the div is present on Screen";
+               color: blue;
+               font-weight:bold;
+            }      
+        }
+
+        @media print{
+            .screen_or_print:after{
+                content:"This is when the div is being printed";
+                color:green;
+                font-weight: normal;
+
+            }
+        }
+
+        @media (max-width:500px){
+            .screen_or_print{
+                background-color: green;
+            }
+        }
+ 
+        @media (min-width:501px){
+            .screen_or_print{
+                background-color: Orange;
+            }
+        }
+
+        @media (orientation:portrait){
+            .screen_or_print:after{
+                content:"Device in portrait mode";
+                background-color: blue;
+                color:white
+
+            }
+        }
+
+        @media (orientation:landscape){
+            .screen_or_print:after{
+                content:"Device in Landscape mode";
+                background-color: cyan;
+            }
+        }
+
+        @media (orientation:portrait) and (min-width:400px) {
+            .screen_or_print:after{
+                content:"Device in portrait mode and width greater than 400px";
+                background-color: darkblue;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="screen_or_print"> 
+        The background color of the screen changes from Orange to Green for smaller screen  
+    </div>
+
+<!-- Using Media Attribute -->
+    <picture>
+        <source srcset="https://images.unsplash.com/photo-1606041008023-472dfb5e530f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80" media="(min-width: 1000px)" width="1000" height="400">
+        <source srcset="https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" media="(min-width: 800px)" width="800" height="800">
+        <source srcset="https://images.unsplash.com/photo-1546842931-886c185b4c8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=385&q=80" media="(min-width: 600px)" width="600" height="800">
+        <img src="https://images.unsplash.com/photo-1567078371528-21d83331bead?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Image used when the browser does not support the sources" width="500" height="400">
+      </picture>
+    
+      <a href="http://www.google.com" media="screen,handheld">Meda example</a>
+</body>
+</html>
