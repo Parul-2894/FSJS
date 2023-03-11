@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Checker</title>
+</head>
+<body>
+    <script>
+        const ans = prompt("Enter a Number?");
+     
+        function checkIfPrime(num){
+            let devider = parseInt(num - 1);
+            while(devider > 1){
+                if (num % devider == 0){
+                    return false;
+                }
+                else{
+                    devider = devider - 1
+                }
+            }
+
+            if (devider == 1){
+                return true
+            }
+        }
+
+        if (checkIfPrime(ans)){
+            alert(`You entered a prime number ${ans}`)
+        }else{
+            alert(`You did not enter a prime number ${ans}`)
+        }
+        
+    </script>
+   
+    
+</body>
+</html>
