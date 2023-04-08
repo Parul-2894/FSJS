@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Parul-2894/todoapp/static/css/main.d5234c77.css",
+    "main.js": "/Parul-2894/todoapp/static/js/main.70b57807.js",
+    "index.html": "/Parul-2894/todoapp/index.html",
+    "main.d5234c77.css.map": "/Parul-2894/todoapp/static/css/main.d5234c77.css.map",
+    "main.70b57807.js.map": "/Parul-2894/todoapp/static/js/main.70b57807.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5234c77.css",
+    "static/js/main.70b57807.js"
+  ]
+}
